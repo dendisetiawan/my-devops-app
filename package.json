@@ -4,14 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "start": "node index.js",
-  "test": "echo \"No test yet\" && exit 0"
-}
-,
+    "start": "node index.js",
+    "test": "echo \"No test yet\" && exit 0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },"homepage": "https://dendisetiawan25.github.io/devops-demo",
+
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
